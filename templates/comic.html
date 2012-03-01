@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ sitetitle }}: {{ comic.title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ sitetitle }}</h1>
+    <h2>{{ comic.title }}</h2>
+    {% include "includes/nav.html" %}
+    <br>
+    <img src="{{ comic.img_url }}" title="{{ comic.tooltip }}" alt="{{ comic.title }}" />
+    <br>
+    {% include "includes/nav.html" %}
+{% endblock %}
