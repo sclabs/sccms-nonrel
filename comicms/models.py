@@ -19,4 +19,4 @@ class Comic(models.Model):
         super(Comic, self).save(*args, **kwargs)
 
     def img_url(self):
-        return self.img_src.name.split('/', 1)[1]
+        return u'/' + self.img_src.name.split('/', 1)[1]
