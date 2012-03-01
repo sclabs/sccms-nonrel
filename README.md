@@ -15,6 +15,7 @@ Prerequisites
 
 - [Python 2.x](http://python.org/)
 - [Django 1.x](https://www.djangoproject.com/)
+- [Google App Engine SDK for Python](http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Python)
 
 Installation
 ------------
