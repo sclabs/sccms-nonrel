@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-urlpatterns = patterns('sccms.views',
+urlpatterns = patterns('sccms_nonrel.views',
     url(r'^$', 'lastcomic', name="last"),
     url(r'^(\d+)/$', 'particularcomic', name="particular"),
     url(r'^random/$', 'randomcomic', name="random"),
