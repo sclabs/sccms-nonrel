@@ -8,5 +8,5 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url('^_ah/warmup$', 'djangoappengine.views.warmup'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('comicms.urls')),
+    url(r'^', include('sccms.urls')),
 )

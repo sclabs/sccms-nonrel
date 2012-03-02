@@ -1,6 +1,6 @@
 from models import Comic
 from django.shortcuts import render_to_response, redirect, get_object_or_404
-from comicms.settings import SITE_TITLE
+from sccms.settings import SITE_TITLE
 import random
 from filetransfers.api import serve_file
 

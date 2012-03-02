@@ -1,5 +1,5 @@
 from django.contrib import admin
-from comicms.models import Comic
+from models import Comic
 from filetransfers.admin import FiletransferAdmin
 
 class ComicAdmin(FiletransferAdmin):
