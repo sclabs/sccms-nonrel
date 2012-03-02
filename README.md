@@ -35,7 +35,7 @@ Quick-Start (in Eight Easy Steps)
 1. Go to [appengine.google.com](http://appengine.google.com), log in with your Google Account, and follow the instructions to enable Google App Engine for your account (if you haven't done so already).
 2. Create a new app, and remember your app's application identifier.
 3. In `app.yaml`, replace `myapp` with the application identifier for your app.
-4. In `sccms/settings.py`, change `SITE_TITLE` from 'My Awesome Webcomic' to whatever you actually want to call your site.
+4. In `sccms_nonrel/settings.py`, change `SITE_TITLE` from 'My Awesome Webcomic' to whatever you actually want to call your site.
 5. Run `python manage.py deploy` and authenticate with your Google Account when prompted.
 6. Run `python manage.py remote createsuperuser` to create a superuser for yourself.
 7. Point your browser to <http://your_application_identifier.appspot.com/admin/>
