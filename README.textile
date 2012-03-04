@@ -1,0 +1,66 @@
+h1. sccms-nonrel
+
+_A port of "Simple-Comic-CMS":https://github.com/sclabs/sccms to django-nonrel and django-filetransfers for Google App Engine deployment._
+
+<img src="http://sccms.gilgi.org/img/sccms.png" alt="Simple-Comic-CMS" title="Simple-Comic-CMS" height="250px" width="250px"/>
+
+h2. Introduction
+
+If you're looking for an easy way to deploy Simple-Comic-CMS to the Google App Engine, you've come to the right place. With sccms-nonrel, you can have your own webcomic up and running in no time!
+
+h2. Prerequisites
+
+* "Python 2.x":http://python.org
+* "Django 1.x":https://www.djangoproject.com/
+* "Google App Engine SDK for Python":http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Python
+
+h2. Installation
+
+Make sure you have the prerequisites listed above installed. Next, "download the latest version of sccms-nonrel":https://github.com/sclabs/sccms-nonrel/zipball/master. Unzip the archive to any directory on your file system.
+
+Alternatively, you can clone the git repository by executing
+
+bc. git clone git://github.com/sclabs/sccms-nonrel.git
+
+Feel free to fork the repository and develop your own tweaks and features under the conditions of the license (see below).
+
+h2. Quick-Start (in Eight Easy Steps)
+
+# Go to "appengine.google.com":http://appengine.google.com, log in with your Google Account, and follow the instructions to enable Google App Engine for your account (if you haven't done so already).
+# Create a new app, and remember your app's application identifier.
+# In @app.yaml@, replace @myapp@ with the application identifier for your app.
+# In @sccms_nonrel/settings.py@, change @SITE_TITLE@ from @'My Awesome Webcomic'@ to whatever you actually want to call your site.
+# Run @python manage.py deploy@ and authenticate with your Google Account when prompted.
+# Run @python manage.py remote createsuperuser@ to create a superuser for yourself.
+# Point your browser to "your_application_identifier.appspot.com/admin/":http://your_application_identifier.appspot.com/admin/
+# Click on "Comics" and then "Add comic". Fill out all the fields, upload your image, and click "Save".
+
+It's that simple! Point your browser to "your_application_identifier.appspot.com":http://your_application_identifier.appspot.com to see your comic!
+
+h2. Notes
+
+h3. Comic Numbering
+
+Make sure your comic numbering is consistent. Presently, sccms-nonrel does not check to make sure that your numbering is correct. Numbering your comics incorrectly will result in broken navigation links.
+
+h2. Next Steps
+
+h3. Domain Setup
+
+If you have a domain you'd like to host your webcomic on, you can add a domain to your app by going to the Application Settings page on your Google App Engine dashboard.
+
+h3. Site Themes
+
+The templates directory contains a bare-bones example template (@comic.html@) that you should feel free to modify and style however you like.
+
+h3. Need Help?
+
+For more information visit "sclabs.gilgi.org/sccms-nonrel/":http://sclabs.gilgi.org/sccms-nonrel/. Direct all questions, comments, and bug reports to "sclabs@gilgi.org":mailto:sclabs@gilgi.org.
+
+h2. License Information
+
+sccms-nonrel is released under the terms of the GNU General Public License, the full text of which is available in the file @GPL@. For details, please visit "www.gnu.org/licenses/gpl.html":http://www.gnu.org/licenses/gpl.html.
+
+Modules from the django-nonrel project are redistributed under the terms of the license found in the file @LICENSE@.
+
+sccms-nonrel utilizes and is distributed with Aaron Madison's improved django-filetransfers module, which is redistributed under the terms of the same license.
