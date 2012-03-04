@@ -55,7 +55,7 @@ The templates directory contains a bare-bones example template (@comic.html@) th
 
 h3. Need Help?
 
-For more information visit "sclabs.gilgi.org/sccms-nonrel/":http://sclabs.gilgi.org/sccms-nonrel/. Direct all questions, comments, and bug reports to "sclabs@gilgi.org":mailto:sclabs@gilgi.org.
+For more information visit "sclabs.gilgi.org/sccms-nonrel":http://sclabs.gilgi.org/sccms-nonrel/. Direct all questions, comments, and bug reports to "sclabs@gilgi.org":mailto:sclabs@gilgi.org.
 
 h2. License Information
 
