@@ -2,8 +2,6 @@ h1. sccms-nonrel
 
 _A port of "Simple-Comic-CMS":https://github.com/sclabs/sccms to django-nonrel and django-filetransfers for Google App Engine deployment._
 
-<img src="http://sccms.gilgi.org/img/sccms.png" alt="Simple-Comic-CMS" title="Simple-Comic-CMS" height="250px" width="250px"/>
-
 h2. Introduction
 
 If you're looking for an easy way to deploy Simple-Comic-CMS to the Google App Engine, you've come to the right place. With sccms-nonrel, you can have your own webcomic up and running in no time!
